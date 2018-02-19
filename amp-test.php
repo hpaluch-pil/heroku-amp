@@ -11,7 +11,7 @@
         "@context": "http://schema.org",
         "@type": "NewsArticle",
 	"author": "Unknown",
-	"publisher":"wish to remain anonymous"
+	"publisher":"wish to remain anonymous",
         "headline": "Open-source framework for publishing content",
         "datePublished": "2015-10-07T12:02:41Z",
       }
