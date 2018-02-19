@@ -59,6 +59,11 @@ git push heroku master
 Checking/validating:
 * Online AMP tester: https://search.google.com/test/amp
 
+# Random Notes
+
+Google does not support Publisher type Person:
+- https://stackoverflow.com/a/40586036
+
 # Resources
 
 * AMP homepage: https://www.ampproject.org/docs/tutorials/create/basic_markup

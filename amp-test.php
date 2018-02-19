@@ -15,7 +15,7 @@
 		"name": "Humble person"
 	 },
 	 "publisher": {
-		"@type": "Person",
+		"@type": "Organization",
 		"name": "wish to remain anonymous"
 	 },
         "headline": "Open-source framework for publishing content",
