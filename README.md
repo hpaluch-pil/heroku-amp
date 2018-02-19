@@ -64,6 +64,11 @@ Checking/validating:
 Google does not support Publisher type Person:
 - https://stackoverflow.com/a/40586036
 
+# Bugs
+
+* provide required image for whole page
+* provide required image for publisher
+
 # Resources
 
 * AMP homepage: https://www.ampproject.org/docs/tutorials/create/basic_markup
