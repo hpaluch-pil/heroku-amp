@@ -1,7 +1,9 @@
 <?php
-  $proto = "https";
-  if ( $_SERVER['SERVER_PORT'] == 80 ){
-	  $proto = "http";
+  $proto = "http";
+
+  // is this right way to detect https for heroku?
+  if ( isset($_SERVER['HTTP_X_FORWARDED_PROTO']) ){
+	  $proto = $_SERVER['HTTP_X_FORWARDED_PROTO'];
   }
 
   $url_base = $proto."://".$_SERVER['SERVER_NAME'];
