@@ -7,7 +7,8 @@ cd `dirname $0`
 
 # News Article image
 convert \
-	 -border 10 -bordercolor White \
+	 -size 1200x128 \
+	 -gravity center \
 	 -background White \
          label:"My News Image" \
 	 ../assets/news-image.png
@@ -17,6 +18,7 @@ convert \
 convert \
 	 -size 600x60 \
 	 -background White \
+	 -gravity center \
          label:"My Publisher logo" \
 	 ../assets/logo.png
 
