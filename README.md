@@ -72,6 +72,8 @@ Google does not support Publisher type Person:
 # Resources
 
 * AMP homepage: https://www.ampproject.org/docs/tutorials/create/basic_markup
+* Google NewsArticle attributes (including images):
+  - https://developers.google.com/search/docs/data-types/article
 * Online AMP tester: https://search.google.com/test/amp
 * Article on AMP controversy: https://danielmiessler.com/blog/google-amp-not-good-thing/
 
