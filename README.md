@@ -102,7 +102,9 @@ Images are created using ImageMagick:
 
 # Bugs
 
-* provide required image for publisher
+None known.
+
+Waiting for Google indexing...
 
 # Resources
 
