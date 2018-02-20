@@ -1,7 +1,43 @@
-<h1>Example AMP test pages</h1>
-
-
-<ul>
+<!DOCTYPE html>
+<html lang="en">
+<?php
+	$title = "Example AMP test pages";
+?>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title><?php echo $title; ?></title>
+  <style>
+	/* grabbed from bootstrap ?*/
+	.button.button-primary { color: #FFF; background-color: #33C3F0; border-color: #33C3F0; }
+	.button {
+	    margin-bottom: 1rem;
+	    display: inline-block;
+	    height: 38px;
+	    padding: 0 30px;
+	    color: #555;
+	    text-align: center;
+	    font-size: 11px;
+	    font-weight: 600;
+	    line-height: 38px;
+	    text-decoration: none;
+	    white-space: nowrap;
+	    background-color: transparent;
+	    border-radius: 4px;
+	    border: 1px solid #bbb;
+	    cursor: pointer;
+	    box-sizing: border-box;
+	}
+  </style>
+ </head>
+ <body>
+  <h1><?php echo $title; ?></h1>
+  <ul>
 	<li><a href="amp-test.php">AMP Testpage</a></li>
-</ul>
+  </ul>
+  <p>See <a href="https://github.com/hpaluch-pil/amp-test"
+           class="button button-primary" target="github">Source on GitHub!</a>
+  </p>
+ </body>
+</html>
 
