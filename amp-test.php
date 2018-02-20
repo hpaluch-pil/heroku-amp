@@ -1,14 +1,13 @@
 <!doctype html>
 <html amp lang="en">
 <?php
-  $url_base = "https://".$_SERVER['SERVER_NAME'];
-  $assets_base = $url_base."/assets";
+	require 'include.php';
 ?>
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Hello, AMPs</title>
-    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+    <title><?php echo $amp_title; ?></title>
+    <link rel="canonical" href="<?php echo $canonical_url; ?>">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
       {
@@ -28,7 +27,7 @@
 			"height": 60
 		}
 	 },
-        "headline": "My AMP test page",
+	 "headline": "<?php echo $amp_headline; ?>",
 	"datePublished": "2015-10-07T12:02:41Z",
 	"image": [
 		"<?php echo $assets_base."/news-image.png" ?>"
