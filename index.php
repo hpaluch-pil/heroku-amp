@@ -39,6 +39,7 @@
   <pre>
   URL: <?php echo htmlspecialchars(getenv("URL")); ?>
   </pre>
+  <?php phpinfo(); ?>
 
   <hr>
   <p>See <a href="https://github.com/hpaluch-pil/heroku-amp"
