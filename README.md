@@ -64,9 +64,12 @@ Checking/validating:
 Google does not support Publisher type Person:
 - https://stackoverflow.com/a/40586036
 
+Images are created using ImageMagick:
+- see `scripts/create_images.sh`
+- see official IM guide: http://www.imagemagick.org/Usage/text/#text_operators
+
 # Bugs
 
-* provide required image for whole page
 * provide required image for publisher
 
 # Resources
