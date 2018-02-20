@@ -34,8 +34,8 @@
  <body>
   <h1><?php echo $title; ?></h1>
   <ul>
-	<li><a href="amp-test.php">AMP Testpage</a></li>
-	<li><a href="amp-test-desktop.php">Desktop (canonical) version of page</a></li>
+  <li><a href="amp-test.php">AMP version of "<?php echo $amp_title; ?>"</a> - google search compatible only</li>
+	<li><a href="amp-test-desktop.php">Desktop (canonical) version of "<?php echo $amp_title; ?>"</a> - classic html - can be rendered in common browser.</li>
   </ul>
   <h2>Debug</h2>
   <pre>

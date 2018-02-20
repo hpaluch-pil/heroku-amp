@@ -14,8 +14,9 @@
 
 
   // page specific data - added unique string
-  $amp_title = 'Hello, AMPs irgzurnuloer';
-  $amp_headline = 'My AMP test page irgzurnuloer';
+  $unique_str = 'irgzurnuloer';
+  $amp_title = 'Hello, AMPs '.$unique_str;
+  $amp_headline = 'My AMP test page '.$unique_str;
 
   $image_dir = "assets";
 
