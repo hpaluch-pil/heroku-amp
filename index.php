@@ -37,9 +37,11 @@
   </ul>
   <h2>Debug</h2>
   <pre>
-  URL: <?php echo htmlspecialchars(getenv("URL")); ?>
+  SERVER_NAME: <?php echo htmlspecialchars($_SERVER['SERVER_NAME']); ?>
   </pre>
-  <?php phpinfo(); ?>
+  <?php
+//	phpinfo();
+  ?>
 
   <hr>
   <p>See <a href="https://github.com/hpaluch-pil/heroku-amp"
