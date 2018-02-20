@@ -59,6 +59,38 @@ git push heroku master
 Checking/validating:
 * Online AMP tester: https://search.google.com/test/amp
 
+
+# Using local apache for development
+
+Instal following in your VM:
+```bash
+apt-get install libapache2-mod-php
+```
+Ensure that apache has access to your HOME directory
+```bash
+# as unprivileged user
+chmod a+rx ~/
+```
+
+Change `DocumentRoot` in your `/etc/apache2/sites-available/000-default.conf`
+to your project directory and add permissions there - for example:
+```apache
+        DocumentRoot /home/ansible/projects/heroku-amp
+        <Directory /home/ansible/projects/heroku-amp>
+                AllowOverride None
+                Require all granted
+        </Directory>
+
+```
+
+Restart apache:
+```bash
+systemctl restart apache2
+```
+
+Try access using `http://YOUR_VM_IP/`
+
+
 # Random Notes
 
 Google does not support Publisher type Person:
