@@ -4,6 +4,10 @@
 
 set -ex
 cd `dirname $0`
-convert label:"My News Image" -border 10 ../assets/news-image.png
+convert \
+	 -border 10 -bordercolor White \
+	 -background White \
+         label:"My News Image" \
+	 ../assets/news-image.png
 exit 0
 
