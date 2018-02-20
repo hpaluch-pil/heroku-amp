@@ -41,7 +41,7 @@
   SERVER_NAME: <?php echo htmlspecialchars($_SERVER['SERVER_NAME']); ?>
   </pre>
   <?php
-//	phpinfo();
+	phpinfo();
   ?>
 
   <hr>
