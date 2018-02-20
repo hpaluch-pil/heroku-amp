@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+	require 'include.php';
 	$title = "Example AMP test pages";
 ?>
  <head>

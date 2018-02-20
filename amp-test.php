@@ -22,15 +22,20 @@
 		"name": "wish to remain anonymous",
 		"logo": {
 			"@type": "ImageObject",
-			"url": "<?php echo $assets_base."/logo.png" ?>",
-			"width": 600,
-			"height": 60
+			"url":   "<?php echo $images['logo.png']['url']; ?>",
+			"width":  <?php echo $images['logo.png']['width']; ?>,
+			"height": <?php echo $images['logo.png']['height']; ?>
 		}
 	 },
 	 "headline": "<?php echo $amp_headline; ?>",
 	"datePublished": "2015-10-07T12:02:41Z",
 	"image": [
-		"<?php echo $assets_base."/news-image.png" ?>"
+			{
+			"@type": "ImageObject",
+			"url":   "<?php echo $images['news-image.png']['url']; ?>",
+			"width":  <?php echo $images['news-image.png']['width']; ?>,
+			"height": <?php echo $images['news-image.png']['height']; ?>
+			}
 	]
 
       }

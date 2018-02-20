@@ -13,12 +13,17 @@
   <h1><?php echo $amp_title; ?></h1>
  
   <p> This is canonical text.
-	<img src="assets/news-image.png" alt="News Image" >
+  <img src="<?php echo $images['news-image.png']['url']; ?>" alt="News Image"
+		width="<?php echo $images['news-image.png']['width']; ?>"  
+		height="<?php echo $images['news-image.png']['height']; ?>"  >
   </p>
   
   <hr>
   <p> Go to <a href="/">Index</a>.
-      <img src="assets/logo.png" alt="Logo" >
+
+  <img src="<?php echo $images['logo.png']['url']; ?>" alt="Logo Image"
+		width="<?php echo $images['logo.png']['width']; ?>"  
+		height="<?php echo $images['logo.png']['height']; ?>"  >
   </p>
  </body>
 </html>

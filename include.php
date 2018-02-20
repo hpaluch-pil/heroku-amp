@@ -19,4 +19,23 @@
 
   $image_dir = "assets";
 
+  $images = array();
+
+  // query all images to get widht/height
+  $files = scandir($image_dir);
+  foreach ($files as $filename ) {
+	if ( preg_match('/.*\.(gif|jpg|png)$/',$filename) == 1 ){
+		// we are interested in images only
+		// error_log("Filename1: '$filename'");
+		list($width,$height) = getimagesize( $image_dir ."/". $filename );
+		$images[ $filename ] = array (
+			"width" => $width,
+			"height" => $height,
+			"url" => $assets_base."/".$filename
+		);
+	}
+
+  }
+  // error_log("IMAGES: ".print_r($images,true));
+
 
