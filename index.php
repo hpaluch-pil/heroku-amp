@@ -35,7 +35,7 @@
   <ul>
 	<li><a href="amp-test.php">AMP Testpage</a></li>
   </ul>
-  <p>See <a href="https://github.com/hpaluch-pil/amp-test"
+  <p>See <a href="https://github.com/hpaluch-pil/heroku-amp"
            class="button button-primary" target="github">Source on GitHub!</a>
   </p>
  </body>
