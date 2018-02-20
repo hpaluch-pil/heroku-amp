@@ -45,5 +45,12 @@
   <body>
 	<h1>Welcome to the AMP-mobile web</h1>
 	<p>This is modified source from <a href="https://www.ampproject.org/docs/tutorials/create/basic_markup">AMP project</a> page.
+        <p> Inline picture here:
+	  <amp-img src="<?php echo $images['news-image.png']['url']; ?>" alt="News Image"
+		width="<?php echo $images['news-image.png']['width']; ?>"  
+		height="<?php echo $images['news-image.png']['height']; ?>"  >
+	</amp-img>
+
+	</p>
   </body>
 </html> 
