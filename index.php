@@ -35,6 +35,12 @@
   <ul>
 	<li><a href="amp-test.php">AMP Testpage</a></li>
   </ul>
+  <h2>Debug</h2>
+  <pre>
+  URL: <?php echo htmlspecialchars(getenv("URL")); ?>
+  </pre>
+
+  <hr>
   <p>See <a href="https://github.com/hpaluch-pil/heroku-amp"
            class="button button-primary" target="github">Source on GitHub!</a>
   </p>
