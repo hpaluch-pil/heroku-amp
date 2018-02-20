@@ -107,6 +107,8 @@ Images are created using ImageMagick:
 # Resources
 
 * AMP homepage: https://www.ampproject.org/docs/tutorials/create/basic_markup
+* what is `mainEntityOfPage` - huh?
+  - http://www.seoskeptic.com/how-to-use-schema-org-v2-0s-mainentityofpage-property/
 * Google NewsArticle attributes (including images):
   - https://developers.google.com/search/docs/data-types/article
 * Online AMP tester: https://search.google.com/test/amp

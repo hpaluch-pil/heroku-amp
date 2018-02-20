@@ -10,36 +10,33 @@
     <link rel="canonical" href="<?php echo $canonical_url; ?>">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-	"author": {
-		"@type": "Person",
-		"name": "Humble person"
-	 },
-	 "publisher": {
-		"@type": "Organization",
-		"name": "wish to remain anonymous",
-		"logo": {
-			"@type": "ImageObject",
-			"url":   "<?php echo $images['logo.png']['url']; ?>",
-			"width":  <?php echo $images['logo.png']['width']; ?>,
-			"height": <?php echo $images['logo.png']['height']; ?>
-		}
-	 },
-	 "headline": "<?php echo $amp_headline; ?>",
-	 "datePublished": "<?php echo date('c'); ?>",
-	 "dateModified": "<?php echo date('c'); ?>",
-	"image": [
-			{
+	{
+		"@context": "http://schema.org",
+		"@type": "NewsArticle",
+		"author": {
+			"@type": "Person",
+			"name": "Humble person"
+		 },
+		"publisher": {
+			"@type": "Organization",
+			"name": "wish to remain anonymous",
+			"logo": {
+				"@type": "ImageObject",
+				"url":   "<?php echo $images['logo.png']['url']; ?>",
+				"width":  <?php echo $images['logo.png']['width']; ?>,
+				"height": <?php echo $images['logo.png']['height']; ?>
+			}
+		},
+		"headline": "<?php echo $amp_headline; ?>",
+		"datePublished": "<?php echo date('c'); ?>",
+		"dateModified": "<?php echo date('c'); ?>",
+		"image": [ {
 			"@type": "ImageObject",
 			"url":   "<?php echo $images['news-image.png']['url']; ?>",
 			"width":  <?php echo $images['news-image.png']['width']; ?>,
 			"height": <?php echo $images['news-image.png']['height']; ?>
-			}
-	]
-
-      }
+		} ]
+	}
     </script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   </head>
