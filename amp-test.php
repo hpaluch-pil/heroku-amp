@@ -20,7 +20,12 @@
 	 },
 	 "publisher": {
 		"@type": "Organization",
-		"name": "wish to remain anonymous"
+		"name": "wish to remain anonymous",
+		"logo": {
+			"url": "<?php echo $assets_base."/logo.png" ?>",
+			"width": 600,
+			"height": 60
+		}
 	 },
         "headline": "My AMP test page",
 	"datePublished": "2015-10-07T12:02:41Z",
