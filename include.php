@@ -13,8 +13,8 @@
   $amphtml_url   = $url_base."/amp-test.php";
 
 
-  // page specific data
-  $amp_title = 'Hello, AMPs';
+  // page specific data - added unique string
+  $amp_title = 'Hello, AMPs irgzurnuloer';
   $amp_headline = 'My AMP test page';
 
   $image_dir = "assets";
