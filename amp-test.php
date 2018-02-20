@@ -22,6 +22,7 @@
 		"@type": "Organization",
 		"name": "wish to remain anonymous",
 		"logo": {
+			"@type": "ImageObject",
 			"url": "<?php echo $assets_base."/logo.png" ?>",
 			"width": 600,
 			"height": 60
