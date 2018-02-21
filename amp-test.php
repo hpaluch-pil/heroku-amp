@@ -38,13 +38,9 @@
 		} ]
 	}
     </script>
-    <style amp-boilerplate>
-	h1 { border-bottom: 1px solid black; }
-    </style>
+    <style amp-boilerplate>h1 { border-bottom: 1px solid black; }</style>
     <noscript>
-     <style amp-boilerplate>
-	h1 { border-bottom: 1px solid blue; }
-     </style>
+     <style amp-boilerplate>h1 { border-bottom: 1px solid blue; }</style>
     </noscript>
   </head>
   <body>
