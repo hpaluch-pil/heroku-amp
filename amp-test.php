@@ -42,13 +42,9 @@
 	h1 { border-bottom: 1px solid black; }
     </style>
     <!-- unfortunately the evil animation boilerplate stuff is required -->
-    <style amp-boilerplate>
-		body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-    </style>
+    <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
     <noscript>
-	<style amp-boilerplate>
-		body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-	</style>
+	<style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
     </noscript>
 
   </head>
