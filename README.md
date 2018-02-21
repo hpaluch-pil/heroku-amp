@@ -12,7 +12,7 @@ Structured data validator (currently does NOT pass):
 
 # Deploying this App yourself
 
-Create anywhere VM with Debian9 (tested Debian GNU/Linux 9.3 (stretch) / amd64 )with following paremeters:
+Create anywhere VM with Debian9 (tested `Debian GNU/Linux 9.3 (stretch)` on `amd64`) with following paremeters:
 
 * 20GB disk space (8GB should be enough)
 * 512MB or more RAM
@@ -28,7 +28,7 @@ apt-get dist-upgrade
 apt-get install curl php-cli git composer
 ```
 
-Install Heroku toolset (inspired by https://devcenter.heroku.com/articles/getting-started-with-php#set-up ):
+Install Heroku toolset (inspired by https://devcenter.heroku.com/articles/getting-started-with-php#set-up):
 
 ```bash
 # additional requirement - isntalls add-apt-repository command and https transport
@@ -96,6 +96,8 @@ Try access using `http://YOUR_VM_IP/`
 Google does not support Publisher type Person:
 - https://stackoverflow.com/a/40586036
 
+AMP Test tool does not show images until they are indexed by Google Image bot (?).
+
 Images are created using ImageMagick:
 - see `scripts/create_images.sh`
 - see official IM guide: http://www.imagemagick.org/Usage/text/#text_operators
@@ -104,7 +106,8 @@ Images are created using ImageMagick:
 
 None known.
 
-Waiting for Google indexing...
+Waiting for Google indexing... You can try to search world unique random
+word `irgzurnuloer`.
 
 # Resources
 
