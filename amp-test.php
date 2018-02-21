@@ -45,7 +45,8 @@
 		"headline": "<?php echo $amp_headline; ?>",
 		"datePublished": "<?php echo date('c'); ?>",
 		"dateModified": "<?php echo date('c'); ?>",
-		"image": <?php echo $my_news_images_json; ?>
+		"image": <?php echo $my_news_images_json; ?>,
+		"description": "AMP example on Heroku"
 	}
     </script>
     <style amp-custom>
