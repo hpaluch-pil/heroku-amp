@@ -37,7 +37,7 @@
 			"url" => $assets_base."/".$filename
 		);
 		if ( preg_match('/^news-image(\.|-\d)/',$filename) == 1 ){
-			$news_images[$filename] = $images[ $filename ];
+			$news_images[] = $images[ $filename ];
 		}
 
 	}

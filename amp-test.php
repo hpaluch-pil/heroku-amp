@@ -5,7 +5,7 @@
 
 	$my_srcset = array();
 	$my_news_images = array();
-	foreach( $news_images as $key => $value){
+	foreach( $news_images as $value){
 		$my_news_images[] = array(
 			"@type" => "ImageObject",
 			"url"   =>  $value['url'],
