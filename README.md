@@ -102,12 +102,13 @@ Images are created using ImageMagick:
 - see `scripts/create_images.sh`
 - see official IM guide: http://www.imagemagick.org/Usage/text/#text_operators
 
+To see my indexed page you can try to search world unique random
+word `irgzurnuloer` on google.com.
+
 # Bugs
 
 None known.
 
-Waiting for Google indexing... You can try to search world unique random
-word `irgzurnuloer`.
 
 # Resources
 
