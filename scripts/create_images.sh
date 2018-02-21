@@ -37,8 +37,14 @@ convert \
 	 -size 600x60 \
 	 -background White \
 	 -gravity center \
-         label:"My Publisher logo" \
-	 ../assets/logo.png
+         label:"My logo" \
+	 ../assets/logo-template.png
+
+convert ../assets/logo-template.png \
+	-gravity SouthWest \
+	-stroke gray \
+	-annotate 0 ' %w x %h pixels' \
+	../assets/logo.png	
 
 
 exit 0
