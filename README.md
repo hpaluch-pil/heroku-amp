@@ -75,8 +75,8 @@ chmod a+rx ~/
 Change `DocumentRoot` in your `/etc/apache2/sites-available/000-default.conf`
 to your project directory and add permissions there - for example:
 ```apache
-        DocumentRoot /home/ansible/projects/heroku-amp
-        <Directory /home/ansible/projects/heroku-amp>
+        DocumentRoot /home/ansible/projects/heroku-amp/public_html
+        <Directory /home/ansible/projects/heroku-amp/public_html>
                 AllowOverride None
                 Require all granted
         </Directory>
