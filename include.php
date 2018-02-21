@@ -20,6 +20,8 @@
 
   $image_dir = "assets";
 
+  $news_images = array();
+
   $images = array();
 
   // query all images to get widht/height
@@ -34,6 +36,10 @@
 			"height" => $height,
 			"url" => $assets_base."/".$filename
 		);
+		if ( preg_match('/^news-image(\.|-\d)/',$filename) == 1 ){
+			$news_images[$filename] = $images[ $filename ];
+		}
+
 	}
 
   }

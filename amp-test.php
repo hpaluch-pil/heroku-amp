@@ -2,6 +2,21 @@
 <html amp lang="en">
 <?php
 	require 'include.php';
+
+	$my_srcset = array();
+	$my_news_images = array();
+	foreach( $news_images as $key => $value){
+		$my_news_images[] = array(
+			"@type" => "ImageObject",
+			"url"   =>  $value['url'],
+			"width"   =>  $value['width'],
+			"height"   =>  $value['height'],
+		);
+		$my_srcset[] = sprintf("%s %dw",$value['url'],$value['width']);
+	}
+	$my_news_images_json = json_encode($my_news_images,
+		JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES);
+	$my_str_srcset = join(",\n", $my_srcset);
 ?>
   <head>
     <meta charset="utf-8">
@@ -30,16 +45,11 @@
 		"headline": "<?php echo $amp_headline; ?>",
 		"datePublished": "<?php echo date('c'); ?>",
 		"dateModified": "<?php echo date('c'); ?>",
-		"image": [ {
-			"@type": "ImageObject",
-			"url":   "<?php echo $images['news-image.png']['url']; ?>",
-			"width":  <?php echo $images['news-image.png']['width']; ?>,
-			"height": <?php echo $images['news-image.png']['height']; ?>
-		} ]
+		"image": <?php echo $my_news_images_json; ?>
 	}
     </script>
     <style amp-custom>
-	h1 { border-bottom: 1px solid black; }
+	h1 { color: blue; }
     </style>
     <!-- 
      According to https://github.com/ampproject/amphtml/blob/master/spec/amp-boilerplate.md:
@@ -50,14 +60,12 @@ AMP HTML documents must contain the following boilerplate in their head tag. Val
   </head>
   <body>
   <h1><?php echo $amp_title; ?></h1>
-	<p>V2: This is modified source from <a href="https://www.ampproject.org/docs/tutorials/create/basic_markup">AMP project</a> page.
-        <p> Inline picture here:
-	  <amp-img src="<?php echo $images['news-image.png']['url']; ?>" alt="News Image"
+	<p>V2: This is modified source from <a href="https://www.ampproject.org/docs/tutorials/create/basic_markup">AMP project</a> page.</p>
+	<amp-img src="<?php echo $images['news-image.png']['url']; ?>" alt="News Image"
 		width="<?php echo $images['news-image.png']['width']; ?>"  
 		height="<?php echo $images['news-image.png']['height']; ?>"
+		srcset="<?php echo $my_str_srcset; ?>"
 		layout="responsive">
 	</amp-img>
-
-	</p>
   </body>
 </html> 

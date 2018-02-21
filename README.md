@@ -119,5 +119,7 @@ None known.
   - https://developers.google.com/search/docs/data-types/article
 * Online AMP tester: https://search.google.com/test/amp
 * Article on AMP controversy: https://danielmiessler.com/blog/google-amp-not-good-thing/
+* ImageMagick - adding text:
+  - http://www.imagemagick.org/Usage/text/
 
 
