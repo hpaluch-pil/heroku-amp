@@ -34,8 +34,9 @@
  <body>
   <h1><?php echo $title; ?></h1>
   <ul>
-  <li><a href="amp-test.php">AMP version of "<?php echo $amp_title; ?>"</a> - google search compatible only</li>
-	<li><a href="amp-test-desktop.php">Desktop (canonical) version of "<?php echo $amp_title; ?>"</a> - classic html - can be rendered in common browser.</li>
+   <li><a href="amp-test.php">AMP version of "<?php echo $amp_title; ?>"</a> - google search compatible only</li>
+   <li><a href="amp-test.php#development=1">Chrome development  "<?php echo $amp_title; ?>"</a> (press F12 and select "Console" tab to see validation errors in Chrome)</li>
+   <li><a href="amp-test-desktop.php">Desktop (canonical) version of "<?php echo $amp_title; ?>"</a> - classic html - can be rendered in common browser.</li>
   </ul>
   <h2>Debug</h2>
   <pre>
