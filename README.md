@@ -121,5 +121,7 @@ None known.
 * Article on AMP controversy: https://danielmiessler.com/blog/google-amp-not-good-thing/
 * ImageMagick - adding text:
   - http://www.imagemagick.org/Usage/text/
+* Heroku:
+  * [PHP Support](https://devcenter.heroku.com/articles/php-support)
 
 
