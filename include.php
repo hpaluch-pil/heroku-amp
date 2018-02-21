@@ -1,4 +1,18 @@
 <?php
+
+  function desc_width_sorter($a,$b){
+	  $v =  $b['width'] - $a['width'];
+	  // sign() function replacement
+	  if ( $v < -1 ){
+		  $v = -1;
+	  }
+	  if ( $v > 1 ){
+		  $v = 1;
+	  }
+	  return $v;
+  }
+
+
   $proto = "http";
 
   // is this right way to detect https for heroku?
@@ -43,6 +57,8 @@
 	}
 
   }
+  // sort news_images by width in descending order
+  usort($news_images,'desc_width_sorter');
   // error_log("IMAGES: ".print_r($images,true));
 
 
