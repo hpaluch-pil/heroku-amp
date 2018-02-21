@@ -38,10 +38,9 @@
 		} ]
 	}
     </script>
-    <style amp-boilerplate>h1 { border-bottom: 1px solid black; }</style>
-    <noscript>
-     <style amp-boilerplate>h1 { border-bottom: 1px solid blue; }</style>
-    </noscript>
+    <style amp-custom>
+	h1 { border-bottom: 1px solid black; }
+    </style>
   </head>
   <body>
   <h1><?php echo $amp_title; ?></h1>
