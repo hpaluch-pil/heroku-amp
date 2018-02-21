@@ -59,13 +59,18 @@ AMP HTML documents must contain the following boilerplate in their head tag. Val
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   </head>
   <body>
-  <h1><?php echo $amp_title; ?></h1>
-	<p>V2: This is modified source from <a href="https://www.ampproject.org/docs/tutorials/create/basic_markup">AMP project</a> page.</p>
-	<amp-img src="<?php echo $images['news-image.png']['url']; ?>" alt="News Image"
+   <header>
+     AMP example on Heroku
+   </header>
+   <article>
+    <h1><?php echo $amp_title; ?></h1>
+    <p>V3: This is modified source from <a href="https://www.ampproject.org/docs/tutorials/create/basic_markup">AMP project</a> page.</p>
+    <amp-img src="<?php echo $images['news-image.png']['url']; ?>" alt="News Image"
 		width="<?php echo $images['news-image.png']['width']; ?>"  
 		height="<?php echo $images['news-image.png']['height']; ?>"
 		srcset="<?php echo $my_str_srcset; ?>"
 		layout="responsive">
-	</amp-img>
+     </amp-img>
+   </article>
   </body>
 </html> 
