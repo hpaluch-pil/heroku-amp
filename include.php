@@ -3,16 +3,6 @@
   function desc_width_sorter($a,$b){
 	  $v =  $b['width'] - $a['width'];
 	  return gmp_sign($v);
-	  /*
-	  // sign() function replacement
-	  if ( $v < -1 ){
-		  $v = -1;
-	  }
-	  if ( $v > 1 ){
-		  $v = 1;
-	  }
-	  return $v;
-	   */
   }
 
 
