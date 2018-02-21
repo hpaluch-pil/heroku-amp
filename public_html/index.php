@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-	require 'include.php';
+	require '../lib/include.php';
 	$title = "Example AMP test pages";
 ?>
  <head>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html amp lang="en">
 <?php
-	require 'include.php';
+	require '../lib/include.php';
 
 	$my_srcset = array();
 	$my_news_images = array();
