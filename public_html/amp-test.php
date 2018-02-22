@@ -52,7 +52,7 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title><?php echo $amp_title; ?></title>
+    <title><?php echo $amp_title; ?> (title)</title>
     <link rel="canonical" href="<?php echo $canonical_url; ?>">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
@@ -70,11 +70,11 @@ AMP HTML documents must contain the following boilerplate in their head tag. Val
   </head>
   <body>
    <header>
-     AMP example on Heroku
+     AMP example on Heroku (header)
    </header>
    <article>
-    <h1><?php echo $amp_title; ?></h1>
-    <p>V3: This is modified source from <a href="https://www.ampproject.org/docs/tutorials/create/basic_markup">AMP project</a> page.</p>
+    <h1><?php echo $amp_title; ?> (h1)</h1>
+    <p><?php echo date('r'); ?>: This is modified source from <a href="https://www.ampproject.org/docs/tutorials/create/basic_markup">AMP project</a> page.</p>
     <amp-img src="<?php echo $images['news-image.png']['url']; ?>" alt="News Image"
 		width="<?php echo $images['news-image.png']['width']; ?>"  
 		height="<?php echo $images['news-image.png']['height']; ?>"
