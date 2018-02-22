@@ -1,5 +1,19 @@
 <?php
 
+  function bread_crumbs_as_html($breadcrumbs){
+	  $nc = false;
+	  echo "<nav>";
+	  foreach( $breadcrumbs as $bc ){
+		  if ($nc){
+			  echo " | ";
+		  } else {
+			  $nc = true;
+		  }
+		printf("<a href=\"%s\">%s</a>",$bc['url'],$bc['name']);	  
+	  }
+	  echo "</nav>";
+  }
+
   function desc_width_sorter($a,$b){
 	  $v =  $b['width'] - $a['width'];
 	  return gmp_sign($v);
@@ -19,6 +33,12 @@
   $canonical_url = $url_base."/amp-test-desktop.php";
   $amphtml_url   = $url_base."/amp-test.php";
 
+  $breadcrumbs = array(
+	  array(
+		  "name" => "Home",
+		  "url"  => $url_base
+	  )
+  );
 
   // page specific data - added unique string
   $unique_str = 'irgzurnuloer';

@@ -2,6 +2,10 @@
 <html lang="en">
 <?php
 	require '../lib/include.php';
+	$breadcrumbs [] = array (
+		"name" => "AMP Desktop",
+		"url"  => $canonical_url
+	);
 ?>
  <head>
   <meta charset="utf-8">
@@ -13,6 +17,7 @@
   <header>
 	AMP example project (header dtp)
   </header>
+  <?php bread_crumbs_as_html($breadcrumbs); ?>
   <article>
   <h1><?php echo $amp_title; ?> (h1 dtp)</h1>
  

@@ -2,6 +2,10 @@
 <html amp lang="en">
 <?php
 	require '../lib/include.php';
+	$breadcrumbs [] = array (
+		"name" => "AMP Mobile",
+		"url"  => $amphtml_url
+	);
 
 	$my_srcset = array();
 	$my_news_images = array();
@@ -72,6 +76,7 @@ AMP HTML documents must contain the following boilerplate in their head tag. Val
    <header>
      AMP example on Heroku (header)
    </header>
+   <?php bread_crumbs_as_html($breadcrumbs); ?>
    <article>
     <h1><?php echo $amp_title; ?> (h1)</h1>
     <p><?php echo date('r'); ?>: This is modified source from <a href="https://www.ampproject.org/docs/tutorials/create/basic_markup">AMP project</a> page.</p>

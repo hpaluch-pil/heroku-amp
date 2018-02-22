@@ -32,6 +32,7 @@
   </style>
  </head>
  <body>
+  <?php bread_crumbs_as_html($breadcrumbs); ?>
   <h1><?php echo $title; ?></h1>
   <ul>
    <li><a href="amp-test.php">AMP version of "<?php echo $amp_title; ?>"</a> - google search compatible only</li>
