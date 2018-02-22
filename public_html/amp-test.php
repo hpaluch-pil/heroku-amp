@@ -17,10 +17,15 @@
 
 	$my_ld_data = array(
 		"@context" => "http://schema.org",
+		"url" => $amphtml_url,
 		"@type"    => "WebPage",
 		"name"     => "AMP example (name)",
 		"headline" => $amp_headline." (headline)",
 		"description" => "AMP example on Heroku (description)",
+		"mainEntityOfPage" => array (
+		      "@type" => "WebPage",
+		      "@id" => $amphtml_url
+		),
 		"author" => array (
 			"@type" => "Person",
 			"name"  => "Humble person"
