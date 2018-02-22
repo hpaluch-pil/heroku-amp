@@ -14,7 +14,33 @@
 		);
 		$my_srcset[] = sprintf("%s %dw",$value['url'],$value['width']);
 	}
-	$my_news_images_json = json_encode($my_news_images,
+
+	$my_ld_data = array(
+		"@context" => "http://schema.org",
+		"@type"    => "WebPage",
+		"name"     => "AMP example (name)",
+		"headline" => $amp_headline." (headline)",
+		"description" => "AMP example on Heroku (description)",
+		"author" => array (
+			"@type" => "Person",
+			"name"  => "Humble person"
+		 ),
+		"publisher" => array (
+			"@type" => "Organization",
+			"name"  => "wish to remain anonymous",
+			"logo" => array(
+				"@type" => "ImageObject",
+				"url"   => $images['logo.png']['url'],
+				"width" => $images['logo.png']['width'],
+				"height" => $images['logo.png']['height']
+			)
+		),
+		"datePublished" => date('c'),
+		"dateModified" => date('c'),
+		"image" => $my_news_images
+	);
+
+	$my_ld_json = json_encode($my_ld_data,
 		JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES);
 	$my_str_srcset = join(",\n", $my_srcset);
 ?>
@@ -25,30 +51,7 @@
     <link rel="canonical" href="<?php echo $canonical_url; ?>">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
-	{
-		"@context": "http://schema.org",
-		"@type": "WebPage",
-		"name": "AMP example (name)",
-		"headline": "<?php echo $amp_headline; ?> (headline)",
-		"description": "AMP example on Heroku (description)",
-		"author": {
-			"@type": "Person",
-			"name": "Humble person"
-		 },
-		"publisher": {
-			"@type": "Organization",
-			"name": "wish to remain anonymous",
-			"logo": {
-				"@type": "ImageObject",
-				"url":   "<?php echo $images['logo.png']['url']; ?>",
-				"width":  <?php echo $images['logo.png']['width']; ?>,
-				"height": <?php echo $images['logo.png']['height']; ?>
-			}
-		},
-		"datePublished": "<?php echo date('c'); ?>",
-		"dateModified": "<?php echo date('c'); ?>",
-		"image": <?php echo $my_news_images_json; ?>
-	}
+	<?php echo $my_ld_json ?>
     </script>
     <style amp-custom>
 	h1 { color: blue; }
