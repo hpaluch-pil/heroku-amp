@@ -1,5 +1,29 @@
 <?php
 
+  // return structure to be easily jsonised for ld+json
+  function bread_crumbs_for_json($breadcrumbs){
+
+	  $bc_items = array();
+	  for($i=0;$i<count($breadcrumbs);$i++){
+		  $bc_items[] = array (
+			"@type"    => "ListItem",
+			"position" => $i+1,
+			"item" => array (
+				"@id"  => $breadcrumbs[$i]['url'],
+				"name" => $breadcrumbs[$i]['name']
+			)
+		  );
+	  }
+
+
+	  $bclist = array(
+		"@context" => "http://schema.org",
+		"@type"    => "BreadcrumbList",
+		"itemListElement" => $bc_items
+	  );
+	  return $bclist;
+  }
+
   function bread_crumbs_as_html($breadcrumbs){
 	  $nc = false;
 	  echo "<nav>";

@@ -46,7 +46,8 @@
 		),
 		"datePublished" => date('c'),
 		"dateModified" => date('c'),
-		"image" => $my_news_images
+		"image" => $my_news_images,
+		"breadcrumb" => bread_crumbs_for_json($breadcrumbs) 
 	);
 
 	$my_ld_json = json_encode($my_ld_data,
