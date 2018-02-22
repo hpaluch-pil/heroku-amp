@@ -6,12 +6,20 @@
 		"name" => "AMP Desktop",
 		"url"  => $canonical_url
 	);
+
+	$my_ld_data = bread_crumbs_for_json($breadcrumbs);
+
+	$my_ld_json = json_encode($my_ld_data,
+		JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES);
 ?>
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="amphtml" href="<?php echo $amphtml_url ; ?>" />
   <title><?php echo $amp_title; ?> (title dtp)</title>
+  <script type="application/ld+json">
+	<?php echo $my_ld_json ?>
+  </script>
  </head>
  <body>
   <header>
