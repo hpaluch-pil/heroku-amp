@@ -27,7 +27,10 @@
     <script type="application/ld+json">
 	{
 		"@context": "http://schema.org",
-		"@type": "NewsArticle",
+		"@type": "WebPage",
+		"name": "AMP example (name)",
+		"headline": "<?php echo $amp_headline; ?> (headline)",
+		"description": "AMP example on Heroku (description)",
 		"author": {
 			"@type": "Person",
 			"name": "Humble person"
@@ -42,11 +45,9 @@
 				"height": <?php echo $images['logo.png']['height']; ?>
 			}
 		},
-		"headline": "<?php echo $amp_headline; ?>",
 		"datePublished": "<?php echo date('c'); ?>",
 		"dateModified": "<?php echo date('c'); ?>",
-		"image": <?php echo $my_news_images_json; ?>,
-		"description": "AMP example on Heroku"
+		"image": <?php echo $my_news_images_json; ?>
 	}
     </script>
     <style amp-custom>
