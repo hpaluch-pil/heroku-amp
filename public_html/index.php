@@ -42,6 +42,7 @@
   <pre>
   SERVER_NAME: <?php echo htmlspecialchars($_SERVER['SERVER_NAME']); ?>
   </pre>
+  <p>Look at <a href="info.php">phpinfo() on Heroku</a></p>
   <?php
 //	phpinfo();
   ?>
