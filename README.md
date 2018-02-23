@@ -13,6 +13,19 @@ Validator is on:
 Structured data (JSON data) validator:
  - https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Frocky-bastion-25448.herokuapp.com%2Famp-test.php
 
+# How AMP works
+
+
+![How AMP works](https://github.com/hpaluch-pil/heroku-amp/blob/master/resources/amp-principle.png?raw=true)
+
+* Google show search results from canonical (desktop) page
+  (`amp-test-desktop.php` in our example)
+* when there is lightning icon - when mobile users click on
+  result he is redirected to Google server with cached version
+  of AMP page (`amp-test.php` in our example)
+
+NOTE: desktop users always see desktop version of page.
+
 # Deploying this App yourself
 
 Create anywhere VM with Debian9 (tested `Debian GNU/Linux 9.3 (stretch)` on `amd64`) with following paremeters:
