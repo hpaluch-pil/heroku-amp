@@ -89,7 +89,7 @@ AMP HTML documents must contain the following boilerplate in their head tag. Val
      </amp-img>
    </article>
    <footer>
-     <?php echo structured_data_link($amphtml_url) ?>
+     <?php echo structured_data_link($amphtml_url,false) ?>
    </footer>
   </body>
 </html> 

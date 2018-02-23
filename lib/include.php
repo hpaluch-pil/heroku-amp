@@ -1,9 +1,10 @@
 <?php
   define("GOOGLE_DATA_VAL_URL","https://search.google.com/structured-data/testing-tool#url=");
 
-  function structured_data_link($url){
+  function structured_data_link($url,$allow_target=true){
 	  $link = GOOGLE_DATA_VAL_URL.urlencode($url);
-	  return sprintf("<a target=\"data_validator\" href=\"%s\">%s</a>",$link,"Validate LD+JSON");
+	  $target = $allow_target ? " target=\"data_validator\"" : ""; 
+	  return sprintf("<a%s href=\"%s\">%s</a>",$target,$link,"Validate LD+JSON");
   }
 
   // return structure to be easily jsonised for ld+json
