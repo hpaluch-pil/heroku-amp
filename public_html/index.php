@@ -3,6 +3,11 @@
 <?php
 	require '../lib/include.php';
 	$title = "Example AMP test pages";
+
+	$my_ld_data = bread_crumbs_for_json($breadcrumbs);
+
+	$my_ld_json = json_encode($my_ld_data,
+		JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES);
 ?>
  <head>
   <meta charset="utf-8">
@@ -30,6 +35,9 @@
 	    box-sizing: border-box;
 	}
   </style>
+  <script type="application/ld+json">
+	<?php echo $my_ld_json ?>
+  </script>
  </head>
  <body>
   <?php bread_crumbs_as_html($breadcrumbs); ?>
