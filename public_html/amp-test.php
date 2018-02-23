@@ -28,7 +28,7 @@
 		"description" => "AMP example on Heroku (description)",
 		"mainEntityOfPage" => array (
 		      "@type" => "WebPage",
-		      "@id" => $amphtml_url
+		      "@id" => $canonical_url
 		),
 		"author" => array (
 			"@type" => "Person",
