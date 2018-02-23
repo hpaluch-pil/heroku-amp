@@ -88,5 +88,8 @@ AMP HTML documents must contain the following boilerplate in their head tag. Val
 		layout="responsive">
      </amp-img>
    </article>
+   <footer>
+     <?php echo structured_data_link($amphtml_url) ?>
+   </footer>
   </body>
 </html> 

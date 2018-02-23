@@ -43,6 +43,7 @@
 		width="<?php echo $images['logo.png']['width']; ?>"  
 		height="<?php echo $images['logo.png']['height']; ?>"  >
      (footer)
+   <?php echo structured_data_link($canonical_url) ?>
   </footer>
  </body>
 </html>

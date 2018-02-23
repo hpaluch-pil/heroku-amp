@@ -1,4 +1,10 @@
 <?php
+  define("GOOGLE_DATA_VAL_URL","https://search.google.com/structured-data/testing-tool#url=");
+
+  function structured_data_link($url){
+	  $link = GOOGLE_DATA_VAL_URL.urlencode($url);
+	  return sprintf("<a href=\"%s\">%s</a>",$link,"Validate LD+JSON");
+  }
 
   // return structure to be easily jsonised for ld+json
   function bread_crumbs_for_json($breadcrumbs){

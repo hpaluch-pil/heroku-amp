@@ -60,6 +60,7 @@
   <p>See <a href="https://github.com/hpaluch-pil/heroku-amp"
            class="button button-primary" target="github">Source on GitHub!</a>
   </p>
+  <p><?php echo structured_data_link($url_base) ?></p>
  </body>
 </html>
 
