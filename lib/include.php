@@ -17,6 +17,7 @@
 			"position" => $i+1,
 			"item" => array (
 				"@id"  => $breadcrumbs[$i]['url'],
+				"url"  => $breadcrumbs[$i]['url'],
 				"name" => $breadcrumbs[$i]['name']
 			)
 		  );
