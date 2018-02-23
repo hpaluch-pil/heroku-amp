@@ -3,7 +3,7 @@
 
   function structured_data_link($url){
 	  $link = GOOGLE_DATA_VAL_URL.urlencode($url);
-	  return sprintf("<a href=\"%s\">%s</a>",$link,"Validate LD+JSON");
+	  return sprintf("<a target=\"data_validator\" href=\"%s\">%s</a>",$link,"Validate LD+JSON");
   }
 
   // return structure to be easily jsonised for ld+json
